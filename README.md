@@ -119,7 +119,7 @@ and the browser toolbar from the extension's options.
 
 ## License
 
-Copyright (c) 2017-2025 Armin Sebastian
+Copyright (c) 2017-2026 Armin Sebastian
 
 This software is released under the terms of the GNU General Public License v3.0.
 See the [LICENSE](LICENSE) file for further information.
