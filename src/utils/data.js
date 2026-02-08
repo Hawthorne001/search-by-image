@@ -257,14 +257,8 @@ const engines = {
     }
   },
   repostSleuth: {
-    url: {
-      target:
-        'https://repostsleuth.com/search?targetImageMatch=60&filterSameAuthor=false',
-      isExec: true
-    },
     image: {
-      target:
-        'https://repostsleuth.com/search?targetImageMatch=60&filterSameAuthor=false',
+      target: 'https://repostsleuth.com/search',
       isExec: true
     }
   },

@@ -4,34 +4,22 @@ import {setFileInputData, initSearch, sendReceipt} from 'utils/engines';
 const engine = 'repostSleuth';
 
 async function search({session, search, image, storageIds} = {}) {
-  if (search.assetType === 'image') {
-    const inputSelector = 'input[type=file]';
-    const input = await findNode(inputSelector);
-
-    await setFileInputData(inputSelector, input, image);
-
-    await sendReceipt(storageIds);
-
-    input.dispatchEvent(new Event('change'));
-  } else {
-    const input = await findNode(
-      '//input[preceding-sibling::label[contains(., "Image URL")]]',
-      {selectorType: 'xpath'}
-    );
-
-    input.value = image.imageUrl;
-
-    await sendReceipt(storageIds);
-
-    input.dispatchEvent(new Event('input'));
-  }
-
-  const button = await findNode(
-    '.v-main button.primary:not(.v-btn--disabled)',
-    {observerOptions: {attributes: true, attributeFilter: ['class']}}
+  (await findNode('button[id$="-trigger-image"]')).dispatchEvent(
+    new MouseEvent('mousedown', {bubbles: true})
   );
 
-  window.setTimeout(() => button.click(), 300);
+  const button = await findNode('button[disabled]');
+
+  const inputSelector = 'input[type=file]';
+  const input = await findNode(inputSelector);
+
+  await setFileInputData(inputSelector, input, image);
+
+  await sendReceipt(storageIds);
+
+  input.dispatchEvent(new Event('change', {bubbles: true}));
+
+  window.setTimeout(() => button.click(), 1000);
 }
 
 async function engineAccess() {
