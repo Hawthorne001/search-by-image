@@ -412,8 +412,9 @@ const imageMimeTypes = {
   'image/heif': ['heif'],
   'image/heif-sequence': ['heifs'],
   'image/hej2k': ['hej2'],
-  'image/hsj2': ['hsj2'],
   'image/ief': ['ief'],
+  'image/jaii': ['jaii'],
+  'image/jais': ['jais'],
   'image/jls': ['jls'],
   'image/jp2': ['jp2', 'jpg2'],
   'image/jpeg': ['jpg', 'jpeg', 'jpe'],
@@ -421,6 +422,7 @@ const imageMimeTypes = {
   'image/jphc': ['jhc'],
   'image/jpm': ['jpm', 'jpgm'],
   'image/jpx': ['jpx', 'jpf'],
+  'image/jxl': ['jxl'],
   'image/jxr': ['jxr'],
   'image/jxra': ['jxra'],
   'image/jxrs': ['jxrs'],
@@ -430,6 +432,7 @@ const imageMimeTypes = {
   'image/jxss': ['jxss'],
   'image/ktx': ['ktx'],
   'image/ktx2': ['ktx2'],
+  'image/pjpeg': ['jfif'],
   'image/png': ['png'],
   'image/prs.btif': ['btif', 'btf'],
   'image/prs.pti': ['pti'],
@@ -440,6 +443,7 @@ const imageMimeTypes = {
   'image/tiff-fx': ['tfx'],
   'image/vnd.adobe.photoshop': ['psd'],
   'image/vnd.airzip.accelerator.azv': ['azv'],
+  'image/vnd.blockfact.facti': ['facti'],
   'image/vnd.dece.graphic': ['uvi', 'uvvi', 'uvg', 'uvvg'],
   'image/vnd.djvu': ['djvu', 'djv'],
   'image/vnd.dvb.subtitle': ['sub'],
@@ -464,6 +468,7 @@ const imageMimeTypes = {
   'image/webp': ['webp'],
   'image/wmf': ['wmf'],
   'image/x-3ds': ['3ds'],
+  'image/x-adobe-dng': ['dng'],
   'image/x-cmu-raster': ['ras'],
   'image/x-cmx': ['cmx'],
   'image/x-freehand': ['fh', 'fhc', 'fh4', 'fh5', 'fh7'],
@@ -484,9 +489,7 @@ const imageMimeTypes = {
   'image/x-xwindowdump': ['xwd']
 };
 
-Object.assign(imageMimeTypes, {
-  'image/jxl': ['jxl']
-});
+Object.assign(imageMimeTypes, {});
 
 const imageTypeNames = {
   'image/aces': '',
@@ -506,8 +509,9 @@ const imageTypeNames = {
   'image/heif': 'HEIF',
   'image/heif-sequence': '',
   'image/hej2k': '',
-  'image/hsj2': '',
   'image/ief': '',
+  'image/jaii': '',
+  'image/jais': '',
   'image/jls': '',
   'image/jp2': 'JP2',
   'image/jpeg': 'JPEG',
@@ -515,6 +519,7 @@ const imageTypeNames = {
   'image/jphc': '',
   'image/jpm': '',
   'image/jpx': 'JPX',
+  'image/jxl': 'JPEG XL',
   'image/jxr': '',
   'image/jxra': '',
   'image/jxrs': '',
@@ -524,6 +529,7 @@ const imageTypeNames = {
   'image/jxss': '',
   'image/ktx': '',
   'image/ktx2': '',
+  'image/pjpeg': 'JFIF',
   'image/png': 'PNG',
   'image/prs.btif': '',
   'image/prs.pti': '',
@@ -534,6 +540,7 @@ const imageTypeNames = {
   'image/tiff-fx': '',
   'image/vnd.adobe.photoshop': 'PSD',
   'image/vnd.airzip.accelerator.azv': '',
+  'image/vnd.blockfact.facti': '',
   'image/vnd.dece.graphic': '',
   'image/vnd.djvu': '',
   'image/vnd.dvb.subtitle': '',
@@ -558,6 +565,7 @@ const imageTypeNames = {
   'image/webp': 'WebP',
   'image/wmf': '',
   'image/x-3ds': '',
+  'image/x-adobe-dng': 'DNG',
   'image/x-cmu-raster': '',
   'image/x-cmx': '',
   'image/x-freehand': '',
@@ -578,9 +586,7 @@ const imageTypeNames = {
   'image/x-xwindowdump': ''
 };
 
-Object.assign(imageTypeNames, {
-  'image/jxl': 'JPEG XL'
-});
+Object.assign(imageTypeNames, {});
 
 const convertImageMimeTypes = ['image/webp', 'image/avif'];
 
