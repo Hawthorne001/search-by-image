@@ -51,7 +51,7 @@
     "filesize": "^11.0.13",
     "idb-keyval": "^6.2.2",
     "imagesloaded": "^5.0.0",
-    "lodash-es": "^4.17.21",
+    "lodash-es": "^4.17.23",
     "masonry-layout": "^4.2.2",
     "p-queue": "^9.0.1",
     "readable-stream": "^4.7.0",
@@ -93,7 +93,7 @@
     "sharp": "^0.34.5",
     "vue-loader": "^17.4.2",
     "web-ext": "^9.2.0",
-    "webpack": "^5.103.0",
+    "webpack": "^5.105.0",
     "webpack-bundle-analyzer": "^5.1.0",
     "webpack-cli": "^6.0.1",
     "webpack-plugin-vuetify": "^3.1.2"
