@@ -986,6 +986,7 @@ body {
 }
 
 .search-mode-menu__content {
+  position: fixed !important;
   top: 56px !important;
   left: 16px !important;
   transform-origin: center top !important;
@@ -1002,6 +1003,7 @@ body {
 }
 
 .action-menu__content {
+  position: fixed !important;
   top: 56px !important;
   left: auto !important;
   right: 16px !important;
