@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [8.5.0](https://github.com/dessant/search-by-image/compare/v8.4.0...v8.5.0) (2026-02-09)
+
+
+### Features
+
+* enable pasting images from the clipboard in Firefox for Android ([4fa7bbd](https://github.com/dessant/search-by-image/commit/4fa7bbd7365aa439d4ed17f43f8190f72f5dc190))
+
+
+### Bug Fixes
+
+* improve platform detection ([248ccb1](https://github.com/dessant/search-by-image/commit/248ccb16604f426b9cbf4ca97dff402301a11e8c))
+* remove image size limit for Kagi ([47291c9](https://github.com/dessant/search-by-image/commit/47291c9a54bfe7d0ef5c1b77581e8bbf61c7e249)), closes [#425](https://github.com/dessant/search-by-image/issues/425)
+* show dropdown menus in extension modal on iPadOS ([9810940](https://github.com/dessant/search-by-image/commit/98109403c12bb1d0eb69b608772b5ef814c07801))
+* update LykDat ([c9c5507](https://github.com/dessant/search-by-image/commit/c9c5507e35b80341ffdf9df87d1149d620d3483e))
+* update Reddit Repost Sleuth ([0ff8d8f](https://github.com/dessant/search-by-image/commit/0ff8d8f8ddfccd517523cb7085639bae84e17eed))
+
 ## [8.4.0](https://github.com/dessant/search-by-image/compare/v8.3.1...v8.4.0) (2025-12-04)
 
 
